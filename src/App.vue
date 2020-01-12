@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>ToDo Application</h1>
-    <AddTodo/>
+    <AddTodo @add-todo="addTodo"/>
     <hr/>
     <TodoList
       v-bind:todos="todos"
@@ -32,6 +32,9 @@ export default {
       this.todos = this.todos.filter((item) => {
         return item.id !== id
       })
+    },
+    addTodo (newTodo) {
+      this.todos.push(newTodo)
     }
   }
 }

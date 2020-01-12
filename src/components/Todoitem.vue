@@ -29,12 +29,13 @@ export default
     justify-content: space-between;
     border: 1px solid #2c3e50;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0;
   }
   .rm{
     color: white;
     background: red;
     border-radius: 50%;
+    border: none;
   }
   .done{
     text-decoration: line-through;

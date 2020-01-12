@@ -31,10 +31,10 @@ export default {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    ul{
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 </style>

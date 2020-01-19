@@ -4,9 +4,11 @@
     <h2>Add or Check</h2>
     <AddTodo @add-todo="addTodo"/>
     <TodoList
+      v-if="todos.length"
       v-bind:todos="todos"
       v-on:remove-todo="removeTodo"
     />
+    <p v-else>No ToDos!</p>
   </div>
 </template>
 

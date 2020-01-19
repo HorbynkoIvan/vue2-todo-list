@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2>ToDo Application</h2>
+    <router-link to="/">Home</router-link>
+    <h2>Add or Check</h2>
     <AddTodo @add-todo="addTodo"/>
-    <hr/>
     <TodoList
       v-bind:todos="todos"
       v-on:remove-todo="removeTodo"

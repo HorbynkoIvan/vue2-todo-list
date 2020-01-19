@@ -3,8 +3,9 @@
     <router-link to="/">Home</router-link>
     <h2>Add or Check</h2>
     <AddTodo @add-todo="addTodo"/>
+    <Loader v-if="loading"/>
     <TodoList
-      v-if="todos.length"
+      v-else-if="todos.length"
       v-bind:todos="todos"
       v-on:remove-todo="removeTodo"
     />
@@ -15,18 +16,17 @@
 <script>
 import TodoList from '../components/TodoList'
 import AddTodo from '../components/AddTodo'
+import Loader from '../components/Loader'
+
 export default {
   name: 'app',
   components: {
-    TodoList, AddTodo
+    TodoList, AddTodo, Loader
   },
   data () {
     return {
-      todos: [
-        { id: 1, title: 'buy car', completed: false },
-        { id: 2, title: 'buy bike', completed: false },
-        { id: 3, title: 'buy snowboard', completed: false }
-      ]
+      todos: [],
+      loading: true
     }
   },
   methods: {
@@ -38,6 +38,17 @@ export default {
     addTodo (newTodo) {
       this.todos.push(newTodo)
     }
+  },
+  mounted () {
+    fetch('https://jsonplaceholder.typicode.com/todos?_limit=3')
+      .then(response => response.json())
+      .then(json => {
+        setTimeout(() => {
+          this.todos = json
+          this.loading = false
+        }, 500
+        )
+      })
   }
 }
 </script>

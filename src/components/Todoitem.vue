@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="todo_item">
     <li>
       <span v-bind:class="{done: todo.completed}">
         <input type="checkbox" name="" id="" v-on:change="todo.completed = !todo.completed">
@@ -24,21 +24,24 @@ export default
 }
 </script>
 
-<style scoped>
-  li{
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid #2c3e50;
-    padding: 10px;
-    margin: 10px 0;
+<style lang="scss" scoped>
+  .todo_item{
+    li{
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid #2c3e50;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .rm{
+      color: white;
+      background: red;
+      border-radius: 50%;
+      border: none;
+    }
+    .done{
+      text-decoration: line-through;
+    }
   }
-  .rm{
-    color: white;
-    background: red;
-    border-radius: 50%;
-    border: none;
-  }
-  .done{
-    text-decoration: line-through;
-  }
+
 </style>

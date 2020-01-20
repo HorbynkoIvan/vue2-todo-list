@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <v-container>
     <router-link to="/">Home</router-link>
     <h2>Add or Check</h2>
     <AddTodo @add-todo="addTodo"/>
@@ -10,7 +10,7 @@
       v-on:remove-todo="removeTodo"
     />
     <p v-else>No ToDos!</p>
-  </div>
+  </v-container>
 </template>
 
 <script>
@@ -58,8 +58,5 @@ export default {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
   }
 </style>

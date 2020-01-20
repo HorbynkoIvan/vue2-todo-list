@@ -1,5 +1,6 @@
 <template>
-  <v-container>
+  <router-link to="/todos">ToDo component</router-link>
+ <!-- <v-container>
     <v-layout
       text-center
       wrap
@@ -81,7 +82,7 @@
         </v-layout>
       </v-flex>
     </v-layout>
-  </v-container>
+  </v-container>-->
 </template>
 
 <script>

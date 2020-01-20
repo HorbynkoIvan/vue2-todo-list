@@ -1,6 +1,15 @@
 <template>
-  <div>
-    <h1>Home</h1>
-    <router-link to="/todos">Todos</router-link>
-  </div>
+  <HelloWorld />
 </template>
+
+<script>
+import HelloWorld from '../components/HelloWorld'
+
+export default {
+  name: 'Home',
+
+  components: {
+    HelloWorld
+  }
+}
+</script>

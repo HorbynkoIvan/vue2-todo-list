@@ -1,15 +1,17 @@
 <template>
-  <HelloWorld />
+  <div>
+    <router-link to="/todos">ToDo component</router-link>
+    <ListCheckbox/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld'
-
+import ListCheckbox from '../components/ListCheckbox'
 export default {
   name: 'Home',
 
   components: {
-    HelloWorld
+    ListCheckbox
   }
 }
 </script>

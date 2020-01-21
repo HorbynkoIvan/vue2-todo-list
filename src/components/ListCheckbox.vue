@@ -3,7 +3,7 @@
     class="mx-auto"
     max-width="500"
   >
-    <v-list shaped>
+    <v-list>
       <v-list-item-group
         v-model="model"
         multiple

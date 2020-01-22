@@ -7,12 +7,12 @@
       >
         <v-toolbar-title>ToDo</v-toolbar-title>
 
-        <v-spacer></v-spacer>
+        <v-spacer/>
 
         <v-btn icon>
           <v-icon>mdi-magnify</v-icon>
         </v-btn>
-        <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
       </v-app-bar>
     </v-card>
 

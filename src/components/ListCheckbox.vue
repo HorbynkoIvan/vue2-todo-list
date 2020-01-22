@@ -12,7 +12,7 @@
           <v-divider
             v-if="!item"
             :key="`divider-${i}`"
-          ></v-divider>
+          />
 
           <v-list-item
             v-else

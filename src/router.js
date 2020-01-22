@@ -14,6 +14,10 @@ export default new Router({
     {
       path: '/todos',
       component: () => import('./Views/Todos.vue')
+    },
+    {
+      path: '/tabs_vertical',
+      component: () => import('./Views/TabsVertical.vue')
     }
   ]
 })

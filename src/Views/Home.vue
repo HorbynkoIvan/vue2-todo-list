@@ -1,6 +1,7 @@
 <template>
   <div>
-    <router-link to="/todos">ToDo component</router-link>
+    <v-btn to="/todos" class="ma-2" outlined color="indigo">ToDo component</v-btn>
+    <v-btn to="/tabs_vertical" class="ma-2" outlined color="indigo">Tabs Vertical</v-btn>
     <ListCheckbox/>
   </div>
 </template>

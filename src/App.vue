@@ -1,17 +1,20 @@
 <template>
   <v-app>
-    <v-app-bar
-      dark
-    >
-      <v-toolbar-title>ToDo</v-toolbar-title>
+    <v-card>
+      <v-app-bar
+        dark
+        flat
+      >
+        <v-toolbar-title>ToDo</v-toolbar-title>
 
-      <v-spacer></v-spacer>
+        <v-spacer></v-spacer>
 
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-    </v-app-bar>
+        <v-btn icon>
+          <v-icon>mdi-magnify</v-icon>
+        </v-btn>
+        <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      </v-app-bar>
+    </v-card>
 
     <v-navigation-drawer
       v-model="drawer"

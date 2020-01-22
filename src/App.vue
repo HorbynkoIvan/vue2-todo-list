@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <v-card>
+    <v-card tile>
       <v-app-bar
         dark
-        flat
+        tile
       >
         <v-toolbar-title>ToDo</v-toolbar-title>
 

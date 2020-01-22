@@ -2,7 +2,7 @@
   <v-container>
     <v-btn to="/" class="ma-2" outlined color="indigo">Home</v-btn>
     <h2 class="text-center">Tabs Vertical</h2>
-    <v-divider/>
+    <v-divider />
     <v-card class="how-tabs">
       <v-tabs vertical class="tabs">
         <v-tab class="tab flex">
@@ -36,42 +36,82 @@
 
         <v-tab-item>
           <v-card flat tile>
-            <v-img src="../assets/images/how_it_works/how_it_works1.png"></v-img>
+            <v-img
+              src="../assets/images/how_it_works/how_it_works1.png"
+              max-width="610"
+              max-height="463"
+              aspect-ratio="1"
+            />
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
-              Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              at porttitor sem. Aliquam erat volutpat. Donec placerat nisl
+              magna, et faucibus arcu condimentum sed.
             </v-card-text>
-            <Link href='https://www.w3schools.com/' class="" text="LEARN MORE"/>
+            <Link
+              href="https://www.w3schools.com/"
+              class=""
+              text="LEARN MORE"
+            />
           </v-card>
         </v-tab-item>
         <v-tab-item>
           <v-card flat tile>
-            <v-img src="../assets/images/how_it_works/how_it_works2.jpg"></v-img>
+            <v-img
+              src="../assets/images/how_it_works/how_it_works2.jpg"
+              max-width="610"
+              max-height="463"
+              aspect-ratio="1"
+            />
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
-              Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              at porttitor sem. Aliquam erat volutpat. Donec placerat nisl
+              magna, et faucibus arcu condimentum sed.
             </v-card-text>
-            <Link href='https://www.w3schools.com/' class="" text="LEARN MORE"/>
+            <Link
+              href="https://www.w3schools.com/"
+              class=""
+              text="LEARN MORE"
+            />
           </v-card>
         </v-tab-item>
         <v-tab-item>
           <v-card flat tile>
-            <v-img src="../assets/images/how_it_works/how_it_works3.jpg"></v-img>
+            <v-img
+              src="../assets/images/how_it_works/how_it_works3.jpg"
+              max-width="610"
+              max-height="463"
+              aspect-ratio="1"
+            />
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
-              Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              at porttitor sem. Aliquam erat volutpat. Donec placerat nisl
+              magna, et faucibus arcu condimentum sed.
             </v-card-text>
-            <Link href='https://www.w3schools.com/' class="" text="LEARN MORE"/>
+            <Link
+              href="https://www.w3schools.com/"
+              class=""
+              text="LEARN MORE"
+            />
           </v-card>
         </v-tab-item>
         <v-tab-item>
           <v-card flat tile>
-            <v-img src="../assets/images/how_it_works/how_it_works4.jpg"></v-img>
+            <v-img
+              src="../assets/images/how_it_works/how_it_works4.jpg"
+              max-width="610"
+              max-height="463"
+              aspect-ratio="1"
+            />
             <v-card-text>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at porttitor sem.
-              Aliquam erat volutpat. Donec placerat nisl magna, et faucibus arcu condimentum sed.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              at porttitor sem. Aliquam erat volutpat. Donec placerat nisl
+              magna, et faucibus arcu condimentum sed.
             </v-card-text>
-            <Link href='https://www.w3schools.com/' class="" text="LEARN MORE"/>
+            <Link
+              href="https://www.w3schools.com/"
+              class=""
+              text="LEARN MORE"
+            />
           </v-card>
         </v-tab-item>
       </v-tabs>
@@ -80,93 +120,86 @@
 </template>
 
 <script>
-
 export default {
   name: 'TabsVertical',
-  components: {
-  },
+  components: {},
   data () {
-    return {
-
-    }
+    return {}
   },
-  methods: {
-
-  },
-  mounted () {
-
-  }
+  methods: {},
+  mounted () {}
 }
 </script>
 
 <style lang="scss">
-  .how-tabs {
-    margin-top: 50px;
-    .v-tabs {
-      .v-tab {
-        width: 565px;
-        max-width: 100%;
-        height: auto;
-        padding: 27px 0 21px 77px;
-        border-radius: 0;
-        justify-content: start;
+.how-tabs {
+  margin-top: 50px;
 
-        .tab-index {
-          margin: 0 23px 0 0;
+  .v-tabs {
+    .v-tab {
+      width: 565px;
+      max-width: 100%;
+      height: auto;
+      padding: 27px 0 21px 77px;
+      border-radius: 0;
+      justify-content: start;
+
+      .tab-index {
+        margin: 0 23px 0 0;
+        color: #000;
+        font-size: 40px;
+        font-weight: 400;
+      }
+
+      .tab-block {
+        text-align: left;
+
+        p {
+          margin: 0;
+        }
+
+        .text1 {
           color: #000;
-          font-size: 40px;
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 0.88px;
+          line-height: 18px;
+          text-transform: uppercase;
+        }
+
+        .text2 {
+          color: #000;
+          font-size: 25px;
           font-weight: 400;
-        }
-
-        .tab-block {
-          text-align: left;
-
-          p {
-            margin: 0;
-          }
-
-          .text1 {
-            color: #000;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 0.88px;
-            line-height: 18px;
-            text-transform: uppercase;
-          }
-
-          .text2 {
-            color: #000;
-            font-size: 25px;
-            font-weight: 400;
-          }
-        }
-
-        &.v-tab--active {
-          background: #000;
-
-          .tab-index {
-            color: yellow;
-          }
-
-          .tab-block {
-            .text1 {
-              color: yellow;
-            }
-
-            .text2 {
-              color: yellow;
-            }
-          }
         }
       }
 
-      .v-tabs-items{
-        .v-card {
-          .v-card__text {
-            padding-left: 0;
+      &.v-tab--active {
+        background: #000;
+
+        .tab-index {
+          color: yellow;
+        }
+
+        .tab-block {
+          .text1 {
+            color: yellow;
+          }
+
+          .text2 {
+            color: yellow;
           }
         }
       }
     }
+
+    .v-tabs-items {
+      .v-card {
+        .v-card__text {
+          padding-left: 0;
+        }
+      }
+    }
   }
+}
 </style>

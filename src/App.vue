@@ -1,21 +1,8 @@
 <template>
   <v-app>
-    <v-card tile>
+    <div>
       <Header/>
-      <!--<v-app-bar
-        dark
-        tile
-      >
-        <v-toolbar-title>\\</v-toolbar-title>
-
-        <v-spacer/>
-
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
-        </v-btn>
-        <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
-      </v-app-bar>-->
-    </v-card>
+    </div>
 
     <v-navigation-drawer
       v-model="drawer"
@@ -49,7 +36,10 @@
     </v-navigation-drawer>
 
     <v-content>
-      <router-view/>
+      <v-container>
+        <router-view/>
+      </v-container>
+
     </v-content>
     <Footer/>
   </v-app>

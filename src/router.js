@@ -12,7 +12,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/todos',
+      path: '/todo',
       component: () => import('./Views/Todos.vue')
     },
     {

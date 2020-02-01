@@ -1,11 +1,12 @@
 <template>
   <v-app>
     <v-card tile>
-      <v-app-bar
+      <Header/>
+      <!--<v-app-bar
         dark
         tile
       >
-        <v-toolbar-title>ToDo</v-toolbar-title>
+        <v-toolbar-title>\\</v-toolbar-title>
 
         <v-spacer/>
 
@@ -13,7 +14,7 @@
           <v-icon>mdi-magnify</v-icon>
         </v-btn>
         <v-app-bar-nav-icon @click.stop="drawer = !drawer"/>
-      </v-app-bar>
+      </v-app-bar>-->
     </v-card>
 
     <v-navigation-drawer
@@ -57,9 +58,10 @@
 <script>
 
 import Footer from './components/Footer'
+import Header from './components/Header'
 export default {
   name: 'App',
-  components: { Footer },
+  components: { Footer, Header },
   data: () => ({
     drawer: false,
     group: null

@@ -9,8 +9,12 @@
       <v-card class="pb-10 pb-md-12">
         <v-toolbar elevation="0" dense>
           <v-spacer />
-          <v-btn icon dark @click="dialog = false">
-            <img src="/assets/images/icons/mz-close.svg" alt="close" />
+          <v-btn
+            icon
+            dark
+            @click="dialog = false"
+          >
+            <v-icon>md-close</v-icon>
           </v-btn>
         </v-toolbar>
 
@@ -41,7 +45,8 @@ import {
   VBtn,
   VToolbar,
   VSpacer,
-  VCardActions
+  VCardActions,
+  VIcon
 } from 'vuetify/lib'
 
 export default {
@@ -61,7 +66,8 @@ export default {
     'v-toolbar': VToolbar,
     'v-spacer': VSpacer,
     'v-btn': VBtn,
-    'v-card-actions': VCardActions
+    'v-card-actions': VCardActions,
+    'v-icon': VIcon
   }
 }
 </script>

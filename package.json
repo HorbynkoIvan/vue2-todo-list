@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.8.6",
+    "@mdi/font": "^4.9.95",
+    "@mdi/js": "^4.9.95",
     "@storybook/vue": "^5.3.14",
     "@vue/cli-plugin-babel": "^4.1.0",
     "@vue/cli-plugin-eslint": "^4.1.0",
@@ -29,6 +31,7 @@
     "babel-preset-vue": "^2.0.2",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "material-design-icons-iconfont": "^5.0.1",
     "sass": "^1.19.0",
     "vue-cli-plugin-vuetify": "^2.0.3",
     "vue-loader": "^15.9.0",

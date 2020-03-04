@@ -14,6 +14,9 @@
       <v-btn to="/tabs_vertical" flat text>
         Tabs
       </v-btn>
+      <v-btn to="/dialogs" flat text>
+        Dialogs
+      </v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>

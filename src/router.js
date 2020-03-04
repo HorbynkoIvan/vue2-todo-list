@@ -18,6 +18,10 @@ export default new Router({
     {
       path: '/tabs_vertical',
       component: () => import('./Views/TabsVertical.vue')
+    },
+    {
+      path: '/dialogs',
+      component: () => import('./Views/Dialogs.vue')
     }
   ]
 })

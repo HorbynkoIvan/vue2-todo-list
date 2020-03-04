@@ -14,7 +14,7 @@
             dark
             @click="dialog = false"
           >
-            <v-icon>md-close</v-icon>
+            <v-icon dark color="primary">mdi-close</v-icon>
           </v-btn>
         </v-toolbar>
 
